@@ -1,0 +1,90 @@
+2025-11-07 19:40:28,801 [INFO] root: --- Starting Leadership Change ETL Process ---
+2025-11-07 19:40:28,801 [INFO] root: Connecting to MongoDB...
+2025-11-07 19:40:30,411 [INFO] root: MongoDB connection successful.
+2025-11-07 19:40:30,411 [INFO] root: Finding latest source_date in leadcruit_archive...
+2025-11-07 19:41:10,617 [INFO] root: Base period (max archive date) set to: 2025-09
+2025-11-07 19:41:10,617 [INFO] root: Latest period (target) set to: 2025-10
+2025-11-07 19:41:10,618 [INFO] root: Fetching data from leadcruit_archive.people for 2025-09...
+2025-11-07 19:49:26,131 [INFO] root: Loaded 345940 records from people.
+2025-11-07 19:49:26,132 [INFO] root: Fetching data from leadcruit.people for 2025-10...
+2025-11-07 19:57:01,693 [INFO] root: Loaded 345939 records from people.
+2025-11-07 19:57:01,694 [INFO] root: Starting analysis...
+2025-11-07 19:57:01,694 [INFO] root: Merging base and latest people data...
+2025-11-07 19:57:07,848 [INFO] root: Merged DataFrame has 345940 total unique members.
+2025-11-07 19:57:07,848 [INFO] root: Analyzing changes for 2025-10
+2025-11-07 19:57:17,783 [INFO] root: Finished processing. Found 5374 individual leadership change events.
+2025-11-07 19:57:17,784 [INFO] root: Aggregating results by company...
+2025-11-07 19:57:17,826 [INFO] root: Found 1843 companies with leadership changes.
+2025-11-07 19:57:19,801 [INFO] root: Fetching enrichment data for 1843 companies...
+2025-11-07 19:57:21,970 [INFO] root: Found 1104 matching company detail records.
+2025-11-07 19:57:21,970 [INFO] root: Enriching and saving results to leadcruit.leadership_change...
+2025-11-07 19:57:21,983 [INFO] root: Clearing old data from leadcruit.leadership_change...
+2025-11-07 19:57:22,259 [INFO] root: Inserting 1843 new company analysis documents.
+2025-11-07 19:57:23,108 [INFO] root: Analysis complete and data saved.
+2025-11-07 19:57:23,109 [INFO] root: 
+--- Example Output Document ---
+2025-11-07 19:57:23,253 [INFO] root: {
+  "_id": "690e01ca76369e0f092b832c",
+  "company_id": 27934216,
+  "company_name": "Datashark Consultancy",
+  "industry": "Information Technology & Services",
+  "hq_country": "Netherlands",
+  "company_size": null,
+  "leadership_change": true,
+  "leaders_moved_out": [
+    {
+      "member_id": 14922,
+      "member_name": "Jeffrey Hasenbos",
+      "linkedin_url": "https://www.linkedin.com/in/jeffreyhasenbos"
+    }
+  ],
+  "leaders_joined_from_outside": [],
+  "leaders_promoted_internally": [],
+  "last_updated": "2025-11-07 19:57:21.978000"
+}
+2025-11-07 19:57:23,256 [INFO] root: --- Leadership Change ETL Process Finished ---
+2025-11-08 00:37:07,609 [INFO] root: --- Starting Leadership Change ETL Process ---
+2025-11-08 00:37:07,610 [INFO] root: Connecting to MongoDB...
+2025-11-08 00:37:09,507 [INFO] root: MongoDB connection successful.
+2025-11-08 00:37:09,507 [INFO] root: Finding latest source_date in leadcruit_archive...
+2025-11-08 00:37:45,606 [INFO] root: Base period (max archive date) set to: 2025-09
+2025-11-08 00:37:45,606 [INFO] root: Latest period (target) set to: 2025-10
+2025-11-08 00:37:45,606 [INFO] root: Fetching data from leadcruit_archive.people for 2025-09...
+2025-11-08 00:43:52,533 [INFO] root: Loaded 345940 records from people.
+2025-11-08 00:43:52,535 [INFO] root: Fetching data from leadcruit.people for 2025-10...
+2025-11-08 00:51:45,763 [INFO] root: Loaded 345939 records from people.
+2025-11-08 00:51:45,765 [INFO] root: Starting analysis...
+2025-11-08 00:51:45,765 [INFO] root: Merging base and latest people data...
+2025-11-08 00:51:50,341 [INFO] root: Merged DataFrame has 345940 total unique members.
+2025-11-08 00:51:50,341 [INFO] root: Analyzing changes for 2025-10
+2025-11-08 00:51:59,456 [INFO] root: Finished processing. Found 5374 individual leadership change events.
+2025-11-08 00:51:59,457 [INFO] root: Aggregating results by company...
+2025-11-08 00:51:59,478 [INFO] root: Found 1843 companies with leadership changes.
+2025-11-08 00:52:01,217 [INFO] root: Fetching enrichment data for 1843 companies...
+2025-11-08 00:52:05,599 [INFO] root: Found 1104 matching company detail records.
+2025-11-08 00:52:05,599 [INFO] root: Enriching and saving results to leadcruit.leadership_change...
+2025-11-08 00:52:05,605 [INFO] root: Clearing old data from leadcruit.leadership_change...
+2025-11-08 00:52:05,869 [INFO] root: Inserting 1843 new company analysis documents.
+2025-11-08 00:52:11,241 [INFO] root: Analysis complete and data saved.
+2025-11-08 00:52:11,242 [INFO] root: 
+--- Example Output Document ---
+2025-11-08 00:52:11,380 [INFO] root: {
+  "_id": "690e46dd7142e1820802b6e9",
+  "company_id": 27934216,
+  "company_name": "Datashark Consultancy",
+  "industry": "Information Technology & Services",
+  "hq_country": "Netherlands",
+  "company_size": "1-10",
+  "leadership_change": true,
+  "leaders_moved_out": [
+    {
+      "member_id": 14922,
+      "member_name": "Jeffrey Hasenbos",
+      "linkedin_url": "https://www.linkedin.com/in/jeffreyhasenbos"
+    }
+  ],
+  "leaders_joined_from_outside": [],
+  "leaders_promoted_internally": [],
+  "last_updated": "2025-11-08 00:52:05.602000"
+}
+2025-11-08 00:52:11,387 [INFO] root: --- Leadership Change ETL Process Finished ---

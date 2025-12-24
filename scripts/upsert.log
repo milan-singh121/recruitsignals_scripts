@@ -1,0 +1,65 @@
+2025-11-04 13:12:03,972 [INFO] __main__: Connecting to MongoDB at test.m9gl5ri.mongodb.net/...
+2025-11-04 13:12:05,581 [INFO] __main__: Successfully connected to database 'leadcruit'.
+2025-11-04 13:12:05,582 [INFO] __main__: --- Starting upsert for 'company' from /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/company/ ---
+2025-11-04 13:12:05,583 [WARNING] __main__: No .json or .jsonl files found in /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/company/. Skipping.
+2025-11-04 13:12:05,584 [INFO] __main__: --- Starting upsert for 'people' from /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/people/ ---
+2025-11-04 13:12:05,584 [WARNING] __main__: No .json or .jsonl files found in /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/people/. Skipping.
+2025-11-04 13:12:05,584 [INFO] __main__: --- Upsert process completed successfully. ---
+2025-11-04 13:12:05,728 [INFO] __main__: MongoDB connection closed.
+2025-11-04 13:12:55,722 [INFO] __main__: Connecting to MongoDB at test.m9gl5ri.mongodb.net/...
+2025-11-04 13:12:57,282 [INFO] __main__: Successfully connected to database 'leadcruit'.
+2025-11-04 13:12:57,282 [INFO] __main__: --- Starting upsert for 'company' from /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/company/ ---
+2025-11-04 13:12:57,283 [INFO] __main__: Found 2 files to process for 'company'.
+2025-11-04 13:12:57,297 [INFO] __main__: [company] Processing file: part-00000-817a4166-09b3-4e45-b34b-60721a6f0caf-c000.json
+2025-11-04 13:12:58,064 [INFO] __main__: [company] Processing file: part-00000-3fea47f7-90db-4bbf-8a7d-5244a600c7c0-c000.json
+2025-11-04 13:15:22,491 [INFO] __main__: [company] Finished file: part-00000-3fea47f7-90db-4bbf-8a7d-5244a600c7c0-c000.json. Upserted 18861 docs.
+2025-11-04 13:15:50,239 [INFO] __main__: [company] Finished file: part-00000-817a4166-09b3-4e45-b34b-60721a6f0caf-c000.json. Upserted 16610 docs.
+2025-11-04 13:15:50,256 [INFO] __main__: --- 'company' Summary ---
+2025-11-04 13:15:50,256 [INFO] __main__: Processed 2 files. Total documents upserted: 35471
+2025-11-04 13:15:50,256 [INFO] __main__: --- Finished 'company' ---
+2025-11-04 13:15:50,256 [INFO] __main__: --- Starting upsert for 'people' from /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/people/ ---
+2025-11-04 13:15:50,257 [INFO] __main__: Found 5 files to process for 'people'.
+2025-11-04 13:15:50,257 [INFO] __main__: [people] Processing file: part-00003-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-04 13:15:50,314 [INFO] __main__: [people] Processing file: part-00000-ba7c2cf8-ee58-466c-9924-b4a45e31c96e-c000.json
+2025-11-04 13:15:50,410 [INFO] __main__: [people] Processing file: part-00002-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-04 13:15:50,514 [INFO] __main__: [people] Processing file: part-00000-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-04 13:15:50,575 [INFO] __main__: [people] Processing file: part-00001-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-04 13:19:06,918 [INFO] __main__: [people] Finished file: part-00000-ba7c2cf8-ee58-466c-9924-b4a45e31c96e-c000.json. Upserted 34294 docs.
+2025-11-04 13:22:41,863 [INFO] __main__: [people] Finished file: part-00003-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77912 docs.
+2025-11-04 13:22:44,418 [INFO] __main__: [people] Finished file: part-00000-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77900 docs.
+2025-11-04 13:22:47,007 [INFO] __main__: [people] Finished file: part-00002-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77906 docs.
+2025-11-04 13:22:47,409 [INFO] __main__: [people] Finished file: part-00001-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77927 docs.
+2025-11-04 13:22:47,417 [INFO] __main__: --- 'people' Summary ---
+2025-11-04 13:22:47,418 [INFO] __main__: Processed 5 files. Total documents upserted: 345939
+2025-11-04 13:22:47,418 [INFO] __main__: --- Finished 'people' ---
+2025-11-04 13:22:47,418 [INFO] __main__: --- Upsert process completed successfully. ---
+2025-11-04 13:22:47,570 [INFO] __main__: MongoDB connection closed.
+2025-11-07 18:44:38,790 [INFO] __main__: All upserted documents will be tagged with source_date: 2025-10-01 00:00:00
+2025-11-07 18:44:38,791 [INFO] __main__: Connecting to MongoDB at test.m9gl5ri.mongodb.net/...
+2025-11-07 18:44:40,838 [INFO] __main__: Successfully connected to database 'leadcruit'.
+2025-11-07 18:44:40,839 [INFO] __main__: --- Starting upsert for 'company' from /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/company/ ---
+2025-11-07 18:44:40,841 [INFO] __main__: Found 2 files to process for 'company'.
+2025-11-07 18:44:40,859 [INFO] __main__: [company] Processing file: part-00000-817a4166-09b3-4e45-b34b-60721a6f0caf-c000.json
+2025-11-07 18:44:41,337 [INFO] __main__: [company] Processing file: part-00000-3fea47f7-90db-4bbf-8a7d-5244a600c7c0-c000.json
+2025-11-07 18:47:06,740 [INFO] __main__: [company] Finished file: part-00000-3fea47f7-90db-4bbf-8a7d-5244a600c7c0-c000.json. Upserted 18861 docs.
+2025-11-07 18:47:36,960 [INFO] __main__: [company] Finished file: part-00000-817a4166-09b3-4e45-b34b-60721a6f0caf-c000.json. Upserted 16610 docs.
+2025-11-07 18:47:36,969 [INFO] __main__: --- 'company' Summary ---
+2025-11-07 18:47:36,969 [INFO] __main__: Processed 2 files. Total documents upserted: 35471
+2025-11-07 18:47:36,969 [INFO] __main__: --- Finished 'company' ---
+2025-11-07 18:47:36,969 [INFO] __main__: --- Starting upsert for 'people' from /Users/trentino/Work/RecruitSignalsData/data/coresignal_data/October 2025/people/ ---
+2025-11-07 18:47:36,969 [INFO] __main__: Found 5 files to process for 'people'.
+2025-11-07 18:47:36,970 [INFO] __main__: [people] Processing file: part-00002-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-07 18:47:37,012 [INFO] __main__: [people] Processing file: part-00003-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-07 18:47:37,069 [INFO] __main__: [people] Processing file: part-00000-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-07 18:47:37,119 [INFO] __main__: [people] Processing file: part-00001-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json
+2025-11-07 18:47:37,154 [INFO] __main__: [people] Processing file: part-00000-ba7c2cf8-ee58-466c-9924-b4a45e31c96e-c000.json
+2025-11-07 18:51:23,274 [INFO] __main__: [people] Finished file: part-00000-ba7c2cf8-ee58-466c-9924-b4a45e31c96e-c000.json. Upserted 34294 docs.
+2025-11-07 18:55:07,233 [INFO] __main__: [people] Finished file: part-00002-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77906 docs.
+2025-11-07 18:55:09,148 [INFO] __main__: [people] Finished file: part-00000-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77900 docs.
+2025-11-07 18:55:09,940 [INFO] __main__: [people] Finished file: part-00001-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77927 docs.
+2025-11-07 18:55:10,351 [INFO] __main__: [people] Finished file: part-00003-aa49d93b-c248-4f94-b79d-ee77da83a155-c000.json. Upserted 77912 docs.
+2025-11-07 18:55:10,369 [INFO] __main__: --- 'people' Summary ---
+2025-11-07 18:55:10,369 [INFO] __main__: Processed 5 files. Total documents upserted: 345939
+2025-11-07 18:55:10,369 [INFO] __main__: --- Finished 'people' ---
+2025-11-07 18:55:10,369 [INFO] __main__: --- Upsert process completed successfully. ---
+2025-11-07 18:55:10,508 [INFO] __main__: MongoDB connection closed.
